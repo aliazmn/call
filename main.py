@@ -9,3 +9,7 @@ def callback():
         f.write(f"data:{request.data} , query: {request.query_string}")
 
     return Response("done !")
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=6566)
